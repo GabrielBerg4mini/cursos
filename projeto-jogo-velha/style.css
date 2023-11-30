@@ -1,0 +1,57 @@
+body {
+  text-align: center;
+}
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.square {
+  width: 100px;
+  height: 100px;
+  background-color: beige;
+  border: 1px solid gray;
+  display: inline-block;
+  margin: 0.2rem;
+}
+.square {
+  cursor: pointer;
+}
+.o {
+  position: relative;
+}
+.o:after {
+  position: absolute;
+  content: "\1F6E1";
+  line-height: 100px;
+  font-size: 50px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.x {
+  position: relative;
+}
+.x:after {
+  position: absolute;
+  content: "\2694";
+  line-height: 100px;
+  font-size: 50px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+#btn-restart {
+  border: 2px solid rgb(229, 229, 202);
+  background-color: transparent;
+  padding: 0.5rem 3rem;
+  margin-top: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  color: rgb(65, 63, 63);
+}
+#btn-restart:hover {
+  transition: 0.5s;
+  background-color: rgb(229, 229, 202);
+}

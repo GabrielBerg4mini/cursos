@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              backgroundContainer: "rgba(0, 0, 0, 0.356)",
+            },
+          },
+        },
+      }
+    </script>
+    <title>Desafio modal</title>
+  </head>
+  <body class="h-screen bg-purple-300">
+    <div class="relative flex h-screen flex-col items-center justify-center">
+      <div id="button-modal">
+        <button class="rounded bg-blue-400 px-6 py-2 font-bold text-zinc-600">
+          Abrir Modal
+        </button>
+      </div>
+
+      <div
+        id="container-conteudo"
+        class="bg-backgroundContainer absolute flex hidden h-screen w-full items-center justify-center"
+      >
+        <div
+          class="flex h-36 w-96 flex-col items-center justify-center rounded bg-purple-200 text-xl text-zinc-600 shadow-2xl"
+        >
+          <h2 class="mb-2 font-bold">Desafio concluido</h2>
+          <p class="mb-2 font-bold">Não desista, você ira melhorar irmão</p>
+          <p>pressione "esc" para sair.</p>
+
+          <p></p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./desafio.js"></script>
+</html>
