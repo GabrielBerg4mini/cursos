@@ -1,0 +1,170 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font: 400 1rem Arial;
+}
+body {
+  background: #95e2f0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.wrapper {
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  width: 400px;
+  height: 440px;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.wrapper.active {
+  height: 600px;
+}
+.wrapper .form-box {
+  width: 100%;
+  padding: 1.8rem;
+}
+.wrapper .form-box.login {
+  transition: transform 0.18s ease;
+  transform: translateX(0);
+}
+.wrapper.active .form-box.login {
+  transition: none;
+  transform: translateX(-400px);
+}
+.wrapper .form-box.register {
+  position: absolute;
+  transition: none;
+  transform: translateX(400px);
+}
+.wrapper.active .form-box.register {
+  transition: transform 0.18s ease;
+  transform: translateX(0);
+}
+form {
+  width: 100%;
+}
+.title {
+  font-weight: 700;
+  margin: 0.5rem 0 1rem 0;
+  font-size: 1.6rem;
+}
+
+form > fieldset,
+input {
+  border: none;
+  position: relative;
+}
+input {
+  width: 100%;
+  height: 2.5rem;
+  border-radius: 5px;
+  padding-left: 0.5rem;
+  font-weight: 100;
+  margin: 0.8rem 0;
+  backdrop-filter: blur(12px);
+}
+input:focus {
+  outline: 2px solid #87bea9;
+}
+
+input:focus ~ label,
+input:valid ~ label {
+  transform: translateY(-40px);
+  transition: transform 0.3s ease;
+}
+#register input.inputRegister:focus ~ label,
+#register input.inputRegister:valid ~ label {
+  transform: translateY(-40px);
+  transition: transform 0.3s ease;
+}
+
+label {
+  left: 8px;
+  top: 50%;
+  position: absolute;
+  transform: translateY(-50%);
+  transition: transform 0.3s ease;
+}
+.checkboxContainer,
+.containerValidCheckbox {
+  display: flex;
+  padding-left: 0.2rem;
+  gap: 0.5rem;
+  align-items: center;
+  width: 100%;
+}
+.checkbox,
+.validCheckbox {
+  width: 12px;
+  height: 12px;
+}
+.checkboxContainer span,
+.containerValidCheckbox span {
+  color: #2f6cfb;
+  font-size: 0.9rem;
+}
+button {
+  width: 100%;
+  padding: 0.3rem 0;
+  border-radius: 5px;
+  background: rgb(90, 132, 222);
+  color: white;
+  font-weight: 600;
+  line-height: 1.5rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+button:hover {
+  background: rgb(70, 117, 218);
+}
+.containerRegistro {
+  width: 100%;
+  margin: 1rem 0 0.2rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.containerRegistro > a:hover {
+  color: rgb(69, 69, 216);
+  transition: 0.3s;
+}
+.containerValidEmail,
+.containerValidEmail2,
+.containerValidName,
+.containerValidPassword,
+.containerValidPassword2 {
+  width: 100%;
+  text-align: left;
+  padding: 0.2rem 0 0.4rem 0.2rem;
+}
+.validEmail,
+.validEmail2,
+.validName,
+.validPassword,
+.validPassword2 {
+  font-size: 0.9rem;
+}
+.validEmail,
+.validName {
+  color: #ec2620;
+}
+.validEmail2,
+.validPassword,
+.validPassword2 {
+  color: #5e6064;
+}
+.teste {
+  border: 2px solid #ec2620;
+}

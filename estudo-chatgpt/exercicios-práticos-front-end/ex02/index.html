@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>formulario exercício</title>
+  </head>
+
+  <body>
+    <section class="wrapper">
+      <section class="form-box login">
+        <form action="">
+          <legend class="title">Login</legend>
+          <article class="containerValidEmail">
+            <span class="validEmail"></span>
+          </article>
+          <fieldset>
+            <input type="email" name="email" id="email" required />
+            <label for="email">E-mail</label>
+          </fieldset>
+
+          <fieldset>
+            <input type="password" name="password" id="password" required />
+            <label for="password">Senha</label>
+          </fieldset>
+          <fieldset class="checkboxContainer">
+            <input type="checkbox" name="checkbox" class="checkbox" />
+            <span>lembrar de mim</span>
+          </fieldset>
+          <button class="button-login" type="submit">Login</button>
+          <fieldset class="containerRegistro">
+            <p>Não possui uma conta ?</p>
+            <a href="#" class="register-link">Registrar-se</a>
+          </fieldset>
+        </form>
+      </section>
+      <section class="form-box register">
+        <form action="" id="register">
+          <legend class="title">Registrar-se</legend>
+          <fieldset>
+            <input type="text" name="nome" id="nome" required />
+            <label for="nome">Nome</label>
+          </fieldset>
+          <article class="containerValidName">
+            <span class="validName"></span>
+          </article>
+          <fieldset>
+            <input type="email" name="email2" id="email2" required />
+            <label for="email2">E-mail</label>
+          </fieldset>
+          <article class="containerValidEmail2">
+            <span class="validEmail2">ex: carlos@gmail.com</span>
+          </article>
+          <fieldset>
+            <input
+              type="password"
+              name="password2"
+              id="password2"
+              minlength="6"
+              required
+            />
+            <label for="password2">Senha</label>
+          </fieldset>
+          <article class="containerValidPassword">
+            <span class="validPassword"></span>
+          </article>
+          <fieldset>
+            <input type="password" name="password3" id="password3" required />
+            <label for="password3">Confirmar Senha</label>
+          </fieldset>
+          <article class="containerValidPassword2">
+            <span class="validPassword2"></span>
+          </article>
+          <fieldset class="containerValidCheckbox">
+            <input type="checkbox" name="checkbox2" class="validCheckbox" />
+            <span>Aceitar os termos e condições</span>
+          </fieldset>
+          <button class="button-register" type="submit">Registrar-se</button>
+          <fieldset class="containerRegistro">
+            <p>Já possui uma conta ?</p>
+            <a href="#" class="login-link">Fazer Login</a>
+          </fieldset>
+        </form>
+      </section>
+    </section>
+    <script src="index.js"></script>
+  </body>
+</html>
