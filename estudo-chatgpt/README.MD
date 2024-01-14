@@ -16,6 +16,6 @@ exercise 1:
 exercise 2:
 
 <p align="center" display='flex'>
-    <img width="300" src="./assets/login-image.jpeg">
-    <img width="300" src="./assets/register-image.jpeg">
+    <img width="350" src="./assets/login-image.jpeg">
+    <img width="350" src="./assets/register-image.jpeg">
 </p>
