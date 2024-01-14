@@ -10,7 +10,7 @@ exercise 1:
 
   <p align="center" display='flex'>
     <img width="300" src="./assets/ex01-normal.jpeg">
-    <img width="300" src="./assets/ex01-mudou.jpeg">
+    <img width="280" src="./assets/ex01-mudou.jpeg">
 </p>
 
 exercise 2:
