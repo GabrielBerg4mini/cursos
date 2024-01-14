@@ -8,7 +8,7 @@
 
 exercicio 1.
 
-<p align="center" display='flex'>
+<p align="center">
     <img width="600" src="./assets/login-image.jpeg">
     <img width="600" src="./assets/register-image.jpeg">
 </p>
