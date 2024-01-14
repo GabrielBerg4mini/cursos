@@ -25,7 +25,7 @@
             <label for="password">Senha</label>
           </fieldset>
           <fieldset class="checkboxContainer">
-            <input type="checkbox" name="checkbox" class="checkbox" />
+            <input type="checkbox" name="checkbox" id="checkbox" />
             <span>lembrar de mim</span>
           </fieldset>
           <button class="button-login" type="submit">Login</button>
@@ -74,7 +74,7 @@
           </article>
           <fieldset class="containerValidCheckbox">
             <input type="checkbox" name="checkbox2" class="validCheckbox" />
-            <span>Aceitar os termos e condições</span>
+            <span class="msgCheckbox">Aceitar os termos e condições</span>
           </fieldset>
           <button class="button-register" type="submit">Registrar-se</button>
           <fieldset class="containerRegistro">
@@ -82,6 +82,10 @@
             <a href="#" class="login-link">Fazer Login</a>
           </fieldset>
         </form>
+      </section>
+      <section class="login-success">
+        <p>Login Feito com sucesso!</p>
+        <button id="btnVoltarLogin">Voltar ao login</button>
       </section>
     </section>
     <script src="index.js"></script>
